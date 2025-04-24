@@ -1,0 +1,181 @@
+
+                <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf8"><meta name="Generator" content="scriptLattes"><title>sl</title><link rel="stylesheet" href="css/scriptLattes.css" type="text/css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"><link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css"><link rel="stylesheet" type="text/css" href="css/dataTables.colVis.min.css"><script type="text/javascript" charset="utf8" src="js/jquery.min.js"></script><script type="text/javascript" charset="utf8" src="js/jquery.dataTables.min.js"></script><script type="text/javascript" charset="utf8" src="js/dataTables.colVis.min.js"></script><script src="http://professor.ufabc.edu.br/~jesus.mena/sorttable.js"></script></head><body><div id="header2"> <button onClick="history.go(-1)">Voltar</button><h2>sl</h2></div>
+                
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <!--
+        <script type="text/javascript" src="./highcharts.js"></script>
+        <script type="text/javascript" src="./exporting.js"></script>
+        <script type="text/javascript" src="./drilldown.js"></script>
+        -->
+
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+        <script type="text/javascript">
+        // Load the fonts
+        Highcharts.createElement('link', {
+           href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700',
+           rel: 'stylesheet',
+           type: 'text/css'
+        }, null, document.getElementsByTagName('head')[0]);
+
+        Highcharts.theme = {
+   colors: ["#1F77B4", "#118D95", "#8085e9", "#8d4654", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee", "#2b908f", "#90ee7e", "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
+   chart: {
+      backgroundColor: null,
+      style: {
+         fontFamily: "'Source Sans Pro', 'sans-serif'"
+      }
+   },
+   title: {
+      style: {
+         color: 'black',
+         fontSize: '16px',
+         fontWeight: 'bold'
+      }
+   },
+   subtitle: {
+      style: {
+         color: 'black'
+      }
+   },
+   tooltip: {
+      borderWidth: 0
+   },
+   legend: {
+      itemStyle: {
+         fontWeight: 'bold',
+         fontSize: '13px'
+      }
+   },
+   xAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   yAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   plotOptions: {
+      series: {
+         shadow: true
+      },
+      candlestick: {
+         lineColor: '#404048'
+      },
+      map: {
+         shadow: false
+      }
+   },
+
+   // Highstock specific
+   navigator: {
+      xAxis: {
+         gridLineColor: '#D0D0D8'
+      }
+   },
+   rangeSelector: {
+      buttonTheme: {
+         fill: 'white',
+         stroke: '#C0C0C8',
+         'stroke-width': 1,
+         states: {
+            select: {
+               fill: '#D0D0D8'
+            }
+         }
+      }
+   },
+   scrollbar: {
+      trackBorderColor: '#C0C0C8'
+   },
+
+   // General
+   background2: '#E0E0E8'
+};
+
+        Highcharts.setOptions(Highcharts.theme);
+        $(function () {
+            $('#container').highcharts({chart: {type: 'column', 
+height: 300}, 
+title: {text: 'Dissertação de mestrado'}, 
+subtitle: {text: ''}, 
+xAxis: {title: {text: ''}, 
+type: 'category'}, 
+yAxis: {min: 0, 
+title: {text: 'Quantidade', 
+align: 'middle'}, 
+labels: {overflow: 'justify'}, 
+stackLabels: {enabled: true, 
+format: '{stack}'}}, 
+tooltip: {enabled: true, 
+valueSuffix: '', 
+shared: false, 
+headerFormat: '<span style="font-size: 10px">{point.key}{point.stack}{series.stack}</span><br/>', 
+pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: <b>{point.y}</b><br/>'}, 
+plotOptions: {bar: {dataLabels: {enabled: false}}, 
+column: {stacking: null}, 
+series: {shadow: 'true'}}, 
+legend: {enabled: false, 
+layout: 'vertical', 
+align: 'right', 
+verticalAlign: 'middle', 
+borderWidth: 1, 
+backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor || '#FFFFFF'), 
+shadow: true}, 
+credits: {enabled: false}, 
+series: [{name: 'Total', 
+data: [[1985,
+2],
+[1986,
+1],
+[1987,
+1],
+[1989,
+1],
+[1998,
+1],
+[2001,
+1],
+[2004,
+3]]}]});
+        });
+        </script>
+        
+                <h3>Dissertação de mestrado</h3> <br>
+                    <div id="container" style="min-width: 310px; max-width: 1920px; height: 300; margin: 0"></div>
+                    Número total de itens: 10<br>
+                    
+                    
+                    <div id="dv-year-2004"><h3 class="year">2004</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td><a href="http://lattes.cnpq.br/9970630423229332">Fátima Cristina Costa Fontes</a>. <b>A força do afeto na família uma possibilidade de interrupção da prática infracional de adolescentes em liberdade assistida.</b>. Dissertação (Mestrado em Psicologia (Psicologia Social)) - Pontifícia Universidade Católica de São Paulo, . 2004.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7129349357114057">Silvia Tatiana Maurer Lane</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Maira Pedroso Correa da Silva. <b>Linguagem das emoções as relações de afetividade nos índios Kadiweu.</b>. Dissertação (Mestrado em Psicologia (Psicologia Social)) - Pontifícia Universidade Católica de São Paulo, . 2004.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7129349357114057">Silvia Tatiana Maurer Lane</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Maria Cecília Leal Giraldes de Formigoni. <b>Meu filho que nome tem?, lingua de sinais, função materna.</b>. Dissertação (Mestrado em Psicologia (Psicologia Social)) - Pontifícia Universidade Católica de São Paulo, . 2004.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7129349357114057">Silvia Tatiana Maurer Lane</a>.</font></td></tr>
+            </table></div><div id="dv-year-2001"><h3 class="year">2001</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td><a href="http://lattes.cnpq.br/1651155638948615">Alessandra Mara dos Santos Dutra</a>. <b>A criatividade na saúde</b>. Dissertação (Mestrado em Psicologia (Psicologia Social)) - Pontifícia Universidade Católica de São Paulo, . 2001.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7129349357114057">Silvia Tatiana Maurer Lane</a>.</font></td></tr>
+            </table></div><div id="dv-year-1998"><h3 class="year">1998</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>José Carlos Duarte. Movimento da Consciência do Trabalhador com L.E.R. <b>Um estudo de caso</b>. Dissertação (Mestrado em Psicologia (Psicologia Social)) - Pontifícia Universidade Católica de São Paulo, . 1998.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7129349357114057">Silvia Tatiana Maurer Lane</a>.</font></td></tr>
+            </table></div><div id="dv-year-1989"><h3 class="year">1989</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>MONICA GALANO. Todos Somos Iguais (Mas Alguns Sao Mais Iguais Que Outros) Relacoes de Poder e Afeto Num Peq. <b>Grupo</b>. Dissertação - Pontifícia Universidade Católica de São Paulo, . 1989.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7129349357114057">Silvia Tatiana Maurer Lane</a>.</font></td></tr>
+            </table></div><div id="dv-year-1987"><h3 class="year">1987</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>SUELY THEREZINHA MARTINS. <b>Movimento de Consciencia de Militantes de Um Partido Politico.</b>. Dissertação - Pontifícia Universidade Católica de São Paulo, . 1987.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7129349357114057">Silvia Tatiana Maurer Lane</a>.</font></td></tr>
+            </table></div><div id="dv-year-1986"><h3 class="year">1986</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ELVIRA WAGNE. <b>Um Estudo Sobre Idosos Atraves de Cronicas.</b>. Dissertação - Pontifícia Universidade Católica de São Paulo, . 1986.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7129349357114057">Silvia Tatiana Maurer Lane</a>.</font></td></tr>
+            </table></div><div id="dv-year-1985"><h3 class="year">1985</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BRIGIDO VISEU DE CAMARGO. <b>Consciencia da Formacao Profissional Na Universidade: Estudos de Caso da (Re) Producao do Profissional.</b>. Dissertação - Pontifícia Universidade Católica de São Paulo, . 1985.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7129349357114057">Silvia Tatiana Maurer Lane</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>SYLVIA FRIEDMAN. <b>A Genese da Gagueira</b>. Dissertação - Pontifícia Universidade Católica de São Paulo, . 1985.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7129349357114057">Silvia Tatiana Maurer Lane</a>.</font></td></tr>
+            </table></div>
+                    </table>
+                <br><p><br>(*) Relatório criado com produções desde 1950 até 2024
+<br>Data de processamento: 23/04/2025 22:28:24<br>         <div id="footer">         Relatório gerado por <a href="http://scriptlattes.sourceforge.net/">scriptLattes V9</a>.         Os resultados podem ser afetados por possíveis falhas decorrentes de inconsistências no preenchimento dos Currículos Lattes. E-mail de contato: <a href="mailto:admin@email.com">admin@email.com</a>         </div> </body></html>
+              

@@ -1,0 +1,181 @@
+
+                <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf8"><meta name="Generator" content="scriptLattes"><title>sl</title><link rel="stylesheet" href="css/scriptLattes.css" type="text/css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"><link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css"><link rel="stylesheet" type="text/css" href="css/dataTables.colVis.min.css"><script type="text/javascript" charset="utf8" src="js/jquery.min.js"></script><script type="text/javascript" charset="utf8" src="js/jquery.dataTables.min.js"></script><script type="text/javascript" charset="utf8" src="js/dataTables.colVis.min.js"></script><script src="http://professor.ufabc.edu.br/~jesus.mena/sorttable.js"></script></head><body><div id="header2"> <button onClick="history.go(-1)">Voltar</button><h2>sl</h2></div>
+                
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <!--
+        <script type="text/javascript" src="./highcharts.js"></script>
+        <script type="text/javascript" src="./exporting.js"></script>
+        <script type="text/javascript" src="./drilldown.js"></script>
+        -->
+
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+        <script type="text/javascript">
+        // Load the fonts
+        Highcharts.createElement('link', {
+           href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700',
+           rel: 'stylesheet',
+           type: 'text/css'
+        }, null, document.getElementsByTagName('head')[0]);
+
+        Highcharts.theme = {
+   colors: ["#1F77B4", "#118D95", "#8085e9", "#8d4654", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee", "#2b908f", "#90ee7e", "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
+   chart: {
+      backgroundColor: null,
+      style: {
+         fontFamily: "'Source Sans Pro', 'sans-serif'"
+      }
+   },
+   title: {
+      style: {
+         color: 'black',
+         fontSize: '16px',
+         fontWeight: 'bold'
+      }
+   },
+   subtitle: {
+      style: {
+         color: 'black'
+      }
+   },
+   tooltip: {
+      borderWidth: 0
+   },
+   legend: {
+      itemStyle: {
+         fontWeight: 'bold',
+         fontSize: '13px'
+      }
+   },
+   xAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   yAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   plotOptions: {
+      series: {
+         shadow: true
+      },
+      candlestick: {
+         lineColor: '#404048'
+      },
+      map: {
+         shadow: false
+      }
+   },
+
+   // Highstock specific
+   navigator: {
+      xAxis: {
+         gridLineColor: '#D0D0D8'
+      }
+   },
+   rangeSelector: {
+      buttonTheme: {
+         fill: 'white',
+         stroke: '#C0C0C8',
+         'stroke-width': 1,
+         states: {
+            select: {
+               fill: '#D0D0D8'
+            }
+         }
+      }
+   },
+   scrollbar: {
+      trackBorderColor: '#C0C0C8'
+   },
+
+   // General
+   background2: '#E0E0E8'
+};
+
+        Highcharts.setOptions(Highcharts.theme);
+        $(function () {
+            $('#container').highcharts({chart: {type: 'column', 
+height: 300}, 
+title: {text: 'Artigos completos publicados em periódicos'}, 
+subtitle: {text: ''}, 
+xAxis: {title: {text: ''}, 
+type: 'category'}, 
+yAxis: {min: 0, 
+title: {text: 'Quantidade', 
+align: 'middle'}, 
+labels: {overflow: 'justify'}, 
+stackLabels: {enabled: true, 
+format: '{stack}'}}, 
+tooltip: {enabled: true, 
+valueSuffix: '', 
+shared: false, 
+headerFormat: '<span style="font-size: 10px">{point.key}{point.stack}{series.stack}</span><br/>', 
+pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: <b>{point.y}</b><br/>'}, 
+plotOptions: {bar: {dataLabels: {enabled: false}}, 
+column: {stacking: null}, 
+series: {shadow: 'true'}}, 
+legend: {enabled: false, 
+layout: 'vertical', 
+align: 'right', 
+verticalAlign: 'middle', 
+borderWidth: 1, 
+backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor || '#FFFFFF'), 
+shadow: true}, 
+credits: {enabled: false}, 
+series: [{name: 'Total', 
+data: [[1983,
+2],
+[1986,
+1],
+[1989,
+1],
+[1990,
+2],
+[1991,
+1],
+[1996,
+2],
+[1997,
+1]]}]});
+        });
+        </script>
+        
+                <h3>Artigos completos publicados em periódicos</h3> <br>
+                    <div id="container" style="min-width: 310px; max-width: 1920px; height: 300; margin: 0"></div>
+                    Número total de itens: 10<br>
+                    
+                    
+                    <div id="dv-year-1997"><h3 class="year">1997</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>LANE, S. T. M.; FREITAS, Maria de Fátima Quintal de. <b>Processo Grupal Na Perspectiva de Ignácio Martin-Baro: Reflexoes Acerca de Seis Contextos Concretos (Em Col. Com Maria de Fatima Q. de Freitas)</b>. <font color=#330066>Interamerican Journal of Psychology</font>. v. 31, n. 2, p. 293-308, issn: 0034-9690, 1997.</td></tr>
+            </table></div><div id="dv-year-1996"><h3 class="year">1996</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>LANE, S. T. M. <b>Entrevista</b>. <font color=#330066>Psicologia Social e Sociedade</font>. v. 8, n. 1, p. 3-15, 1996. <a href="http://www.scopus.com/scopus/inward/citedby.url?partnerID=bb5nvXTn&rel=R6.0.0&doi=null&md5=f8a2d9f8af7e0fb17f9968fbbee28b49" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>LANE, S. T. M. <b>Estudos Sobre Consciência</b>. <font color=#330066>Psicologia Social e Sociedade</font>. v. 8, n. 1, p. 95-105, 1996.</td></tr>
+            </table></div><div id="dv-year-1991"><h3 class="year">1991</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>LANE, S. T. M.; MAURER, S. T. ; BADER, B. L.. <b>Community Social Psychology In Brazil.</b>. <font color=#330066>APPLIED PSYCHOLOGY: AN INTERNATIONAL REVIEW</font>. v. 40, n. 2, p. 1-24, 1991.</td></tr>
+            </table></div><div id="dv-year-1990"><h3 class="year">1990</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>SILVIA, T. ; LANE, S. T. M.. <b>Psicologia Social: Teoria e Pratica.</b>. <font color=#330066>PSICOLOGIA E SOCIEDADE</font>. v. IV, n. 6, p. 11-19, 1990.</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>SILVIA, T. ; LANE, S. T. M.. <b>Uma Tecnica de Analise do Discurso: Analise Grafica</b>. <font color=#330066>PSICOLOGIA E SOCIEDADE</font>. v. IV, n. 7, p. 37-41, 1990.</td></tr>
+            </table></div><div id="dv-year-1989"><h3 class="year">1989</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>LANE, S. T. M.; MAURE, S. T. ; Psicologia Em Bases Marxistas: da Emocao Ao Inconsciente. <b>Psicologia Em Bases Marxistas: da Emocao Ao Inconsciente.</b>. <font color=#330066>ANAIS DO II ENCONTRO CIENTIFICO DA ANPEPP</font>. p. 0-0, 1989.</td></tr>
+            </table></div><div id="dv-year-1986"><h3 class="year">1986</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>SILVIA, T. ; LANE, S. T. M.. <b>Psicanalise e Marxismo: Dilema da Psicologia Social.</b>. <font color=#330066>PSICOLOGIA E SOCIEDADE</font>. v. 1, n. 2, p. 36-41, 1986.</td></tr>
+            </table></div><div id="dv-year-1983"><h3 class="year">1983</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>LANE, S. T. M. <b>Ideologia No Nivel do Individuo</b>. <font color=#330066>EDUCACAO E SOCIEDADE</font>. v. 6, n. 08, p. 40-48, 1983.</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>LANE, S. T. M.; MAURER, S. T. ; O Mundo Atraves das Palavras. <b>O Mundo Atraves das Palavras.</b>. <font color=#330066>CADERNOS PUC - PSICOLOGIA</font>. v. 15, p. 35-105, 1983.</td></tr>
+            </table></div>
+                    </table>
+                <br><p><br>(*) Relatório criado com produções desde 1950 até 2024
+<br>Data de processamento: 23/04/2025 22:28:24<br>         <div id="footer">         Relatório gerado por <a href="http://scriptlattes.sourceforge.net/">scriptLattes V9</a>.         Os resultados podem ser afetados por possíveis falhas decorrentes de inconsistências no preenchimento dos Currículos Lattes. E-mail de contato: <a href="mailto:admin@email.com">admin@email.com</a>         </div> </body></html>
+              

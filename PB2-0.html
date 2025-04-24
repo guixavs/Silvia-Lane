@@ -1,0 +1,197 @@
+
+                <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf8"><meta name="Generator" content="scriptLattes"><title>sl</title><link rel="stylesheet" href="css/scriptLattes.css" type="text/css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"><link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css"><link rel="stylesheet" type="text/css" href="css/dataTables.colVis.min.css"><script type="text/javascript" charset="utf8" src="js/jquery.min.js"></script><script type="text/javascript" charset="utf8" src="js/jquery.dataTables.min.js"></script><script type="text/javascript" charset="utf8" src="js/dataTables.colVis.min.js"></script><script src="http://professor.ufabc.edu.br/~jesus.mena/sorttable.js"></script></head><body><div id="header2"> <button onClick="history.go(-1)">Voltar</button><h2>sl</h2></div>
+                
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <!--
+        <script type="text/javascript" src="./highcharts.js"></script>
+        <script type="text/javascript" src="./exporting.js"></script>
+        <script type="text/javascript" src="./drilldown.js"></script>
+        -->
+
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+        <script type="text/javascript">
+        // Load the fonts
+        Highcharts.createElement('link', {
+           href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700',
+           rel: 'stylesheet',
+           type: 'text/css'
+        }, null, document.getElementsByTagName('head')[0]);
+
+        Highcharts.theme = {
+   colors: ["#1F77B4", "#118D95", "#8085e9", "#8d4654", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee", "#2b908f", "#90ee7e", "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
+   chart: {
+      backgroundColor: null,
+      style: {
+         fontFamily: "'Source Sans Pro', 'sans-serif'"
+      }
+   },
+   title: {
+      style: {
+         color: 'black',
+         fontSize: '16px',
+         fontWeight: 'bold'
+      }
+   },
+   subtitle: {
+      style: {
+         color: 'black'
+      }
+   },
+   tooltip: {
+      borderWidth: 0
+   },
+   legend: {
+      itemStyle: {
+         fontWeight: 'bold',
+         fontSize: '13px'
+      }
+   },
+   xAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   yAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   plotOptions: {
+      series: {
+         shadow: true
+      },
+      candlestick: {
+         lineColor: '#404048'
+      },
+      map: {
+         shadow: false
+      }
+   },
+
+   // Highstock specific
+   navigator: {
+      xAxis: {
+         gridLineColor: '#D0D0D8'
+      }
+   },
+   rangeSelector: {
+      buttonTheme: {
+         fill: 'white',
+         stroke: '#C0C0C8',
+         'stroke-width': 1,
+         states: {
+            select: {
+               fill: '#D0D0D8'
+            }
+         }
+      }
+   },
+   scrollbar: {
+      trackBorderColor: '#C0C0C8'
+   },
+
+   // General
+   background2: '#E0E0E8'
+};
+
+        Highcharts.setOptions(Highcharts.theme);
+        $(function () {
+            $('#container').highcharts({chart: {type: 'column', 
+height: 300}, 
+title: {text: 'Capítulos de livros publicados'}, 
+subtitle: {text: ''}, 
+xAxis: {title: {text: ''}, 
+type: 'category'}, 
+yAxis: {min: 0, 
+title: {text: 'Quantidade', 
+align: 'middle'}, 
+labels: {overflow: 'justify'}, 
+stackLabels: {enabled: true, 
+format: '{stack}'}}, 
+tooltip: {enabled: true, 
+valueSuffix: '', 
+shared: false, 
+headerFormat: '<span style="font-size: 10px">{point.key}{point.stack}{series.stack}</span><br/>', 
+pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: <b>{point.y}</b><br/>'}, 
+plotOptions: {bar: {dataLabels: {enabled: false}}, 
+column: {stacking: null}, 
+series: {shadow: 'true'}}, 
+legend: {enabled: false, 
+layout: 'vertical', 
+align: 'right', 
+verticalAlign: 'middle', 
+borderWidth: 1, 
+backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor || '#FFFFFF'), 
+shadow: true}, 
+credits: {enabled: false}, 
+series: [{name: 'Total', 
+data: [[1984,
+4],
+[1991,
+1],
+[1994,
+3],
+[1995,
+5],
+[2000,
+1],
+[2003,
+5]]}]});
+        });
+        </script>
+        
+                <h3>Capítulos de livros publicados</h3> <br>
+                    <div id="container" style="min-width: 310px; max-width: 1920px; height: 300; margin: 0"></div>
+                    Número total de itens: 19<br>
+                    
+                    
+                    <div id="dv-year-2003"><h3 class="year">2003</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>LANE, S. T. M. <b>A dialética entre subjetividade vs objetividade</b>. Em: Odair Furtado; fernando Gonzalez-Rey. (Org.). Por uma perspectiva da subjetividade. 1ed.São Paulo. : Casa do Psicólogo. 2003.v. 1, p. 11-16. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>LANE, S. T. M. <b>Emoções e pensamentos: uma dicotomia superada</b>. Em: Ana M. Bahia Bock. (Org.). A perspectiva sócio-histórica na formação em Psicologia. 1ed.Petrópolis. : Vozes. 2003.v. 1, p. 100-112. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>LANE, S. T. M. <b>Novos rumos da Psicologia</b>. Em: Inara Leão. (Org.). Educação e Psicologia. 1ed.Goiania. : Editora da UFMS. 2003.v. 1, p. 25-32. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>LANE, S. T. M. <b>Prefácio</b>. Em: Cleomar Azevedo. (Org.). As emoções no processo de alfabetização e a atuação docente. 1ed.São Paulo. : Vetor. 2003.v. 9, p. 5-14. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>LANE, S. T. M. <b>Apresentação</b>. Em: Dorian Mônica Arpini. (Org.). Violência e exclusão: adolescência em grupos populares. 1ed.Baúru. : Editora da Universidade Sagrado Coração. 2003.v. 1, p. 9-10. </td></tr>
+            </table></div><div id="dv-year-2000"><h3 class="year">2000</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>LANE, S. T. M. <b>Os fundamentos teóricos</b>. Em: Sílvia Tatiana Maurer Lane; Yara Araújo. (Org.). Arqueologia das emoções. 1ed.Petrópolis. : Vozes. 2000.v. 1, p. 13-33. </td></tr>
+            </table></div><div id="dv-year-1995"><h3 class="year">1995</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>LANE, S. T. M. <b>A Mediação Emocional Na Constituição do Psiquismo Humano</b>. Em: Silvia Tatiana M. Lane; Bader B. Sawaia. (Org.). Novas veredas em Psicologia Social. 1ªed.São Paulo. : Brasiliense. 1995.v. 1, .</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>LANE, S. T. M. <b>Contribuição de Vigotsky Para O Estudo das Emoções</b>. Em: Silvia Tatiana M. Lane, Bader B. Sawaia. (Org.). Novas veredas em Psicologia Social. 1ªed.São Paulo. : Brasiliense. 1995.v. 1, .</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>LANE, S. T. M. <b>Apresentação</b>. Em: Silvia Tatiana M. Lane; Bader B. Sawaia. (Org.). Novas veredas em Psicologia Social. 1ªed.São Paulo. : Brasiliense. 1995.v. 1, .</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>LANE, S. T. M. <b>Apresentação</b>. Em: ABRAPSO. (Org.). ABRAPSO - Relações sociais e ética. 1ªed.Porto Alegre. : ABRAPSO - Regional. 1995.v. 1, .</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>LANE, S. T. M. <b>La Psicologia Social Comunitária En Brasil</b>. Em: L. (Org.). Psicologia Comunitária. 1ªed.Caracas. : Fondo Editorial Tropykos. 1995.v. 1, .</td></tr>
+            </table></div><div id="dv-year-1994"><h3 class="year">1994</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>LANE, S. T. M. <b>Linguagem, Pensamento e Representações Sociais</b>. Em: Silvia Tatiana Maurer Lane; Wanderley Codo. (Org.). Psicologia Social: O homem em movimento. 14ªed.São Paulo. : Brasiliense. 1994.v. 01, .</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>LANE, S. T. M. <b>A Psicologia Social e Uma Nova Concepção de Homem Para A Psicologia</b>. Em: Silvia Tatiana M. Lane; Wanderley Codo. (Org.). Psicologia Social: O homem em movimento. 14ªed.São Paulo. : Brasiliense. 1994.v. 01, .</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>LANE, S. T. M. <b>O Processo Grupal</b>. Em: Silvia Tatiana Lane; Wanderley Codo. (Org.). Psicologia Social: O homem em movimento. 14ªed.São Paulo. : Brasiliense. 1994.v. 1, .</td></tr>
+            </table></div><div id="dv-year-1991"><h3 class="year">1991</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>LANE, S. T. M.; BADER, B.. <b>Psicologia Social: Ciencia Ou Politica</b>. Em: PSICOLOGIA POLITICA VENEZUELANO. (Org.). PSICOLOGIA POLITICA LATINO AMERICANO. VENEZUELA. : ED. PANAPO. 1991..</td></tr>
+            </table></div><div id="dv-year-1984"><h3 class="year">1984</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>LANE, S. T. M. <b>Consciencia e Alienacao: A Ideologia No Nivel Individual</b>. Em: Silvia Tatiana Lane; Wanderley Codo. (Org.). PSICOLOGIA SOCIAL: O HOMEM EM MOVIMENTO. S. PAULO. : BRASILIENSE. 1984.p. 0040-0047. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>LANE, S. T. M. <b>O Processo Grupal</b>. Em: Silvia Tatiana Maurer Lane; Wanderley Codo. (Org.). PSICOLOGIA SOCIAL: O HOMEM EM MOVIMENTO.. S. PAULO. : BRASILIENSE. 1984.p. 0078-0098. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>MAURER, S. T. ; LANE, S. T. M.. <b>Linguagem, Pensamento e Representacoes Sociais</b>. Em: Silvia Tatiana Maurer Lane; Wanderley Codo. (Org.). PSICOLOGIA SOCIAL: O HOMEM EM MOVIMENTO.. S.PAULO. : BRASILIENSE. 1984.p. 0032-0039. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>SILVIA, T. ; LANE, S. T. M.. <b>A Psicologia Social e Um Nova Concepcao de Homem Para A Psicologia</b>. Em: Silvia Tatiana Maurer Lane; Wanderley Codo. (Org.). PSICOLOGIA SOCIAL: O HOMEM EM MOVIMENTO.. S. PAULO. : BRASILIENSE. 1984.p. 0010-0019. </td></tr>
+            </table></div>
+                    </table>
+                <br><p><br>(*) Relatório criado com produções desde 1950 até 2024
+<br>Data de processamento: 23/04/2025 22:28:24<br>         <div id="footer">         Relatório gerado por <a href="http://scriptlattes.sourceforge.net/">scriptLattes V9</a>.         Os resultados podem ser afetados por possíveis falhas decorrentes de inconsistências no preenchimento dos Currículos Lattes. E-mail de contato: <a href="mailto:admin@email.com">admin@email.com</a>         </div> </body></html>
+              

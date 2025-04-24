@@ -1,0 +1,18 @@
+strict graph grafo1 {
+	graph [bb="0,0,132,21",
+		id=grafo1,
+		overlap=False
+	];
+	node [fontsize=12,
+		label="\N",
+		shape=rectangle,
+		style=filled
+	];
+	0	[URL="membro-7129349357114057.html",
+		color="#0A6EA4",
+		fontcolor="#FFFFFF",
+		height=0.29167,
+		label="Silvia T. Maurer Lane [0]",
+		pos="66,10.5",
+		width=1.8333];
+}
